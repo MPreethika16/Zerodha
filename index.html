@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerodha Pricing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-logo {
+            color: #0084ff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-menu a {
+            text-decoration: none;
+            color: #333;
+        }
+        .navbar a{
+            font-weight: 400;
+            padding: 0;
+            font-size: .9rem;
+            color: #444;
+        }
+        .navbar-menu  a:hover {
+            color: #387ed1;
+        }
+        
+        .navbar .navbar-menu:active{
+            color: #387ed1;
+            text-shadow: 0 0 0 #387ed1;
+        }
+        .pricing-container{
+            text-align: center;
+            padding: 100px 20px 100px 20px;
+        }
+        .pricing-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .pricing-subtitle {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #9b9b9b;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .pricing-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            
+        }
+        .pricing-amount {
+            font-size: 72px;
+            color: #ffa500;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .pricing-description {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .pricing-details {
+            color: #666;
+            font-size: 14px;
+        }
+        img {
+            max-width: 100%;
+            width: 150px !important;
+            height: auto;
+            max-height: 100px;
+            vertical-align: middle;
+            border-style: none;
+            overflow: clip;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo"><a href="#">
+            <img src="https://zerodha.com/static/images/logo.svg" alt="Zerodha logo">
+        </a></div>
+        <div class="navbar-menu">
+            <a href="#">Signup</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#">Support</a>
+            
+        </div>
+    </nav>
+
+    <div class="pricing-container">
+        <h1 class="pricing-title">Charges</h1>
+        <p class="pricing-subtitle">List of all charges and taxes</p>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-amount"><img src="https://zerodha.com/static/images/pricing-eq.svg" alt=""></div>
+                <div class="pricing-description">Free equity delivery</div>
+                <div class="pricing-details">All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.</div>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-amount"><img src="https://zerodha.com/static/images/other-trades.svg"></div>
+                <div class="pricing-description">Intraday and F&O trades</div>
+                <div class="pricing-details">Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.</div>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-amount"><img src="https://zerodha.com/static/images/pricing-eq.svg" alt=""></div>
+                <div class="pricing-description">Free direct MF</div>
+                <div class="pricing-details">All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
